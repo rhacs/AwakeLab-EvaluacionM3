@@ -8,7 +8,7 @@ $(function () {
         });
 
         // Cerrar el dialogo luego de 1500ms
-        setTimeout(function() {
+        setTimeout(function () {
             $.LoadingOverlay('hide');
         }, 1500);
     };
@@ -22,6 +22,25 @@ $(function () {
 
         // Mostrar recuadro 'Cargando ...'
         mostrarCargando();
+
+        // Obtener categoría seleccionada
+        let categoria = this.innerText;
+        console.log(categoria);
+
+        // Mostrar todos los elementos
+        $('[data-cat]').show();
+
+        // Si la categoría no es 'Mostrar Todo'
+        if (categoria !== 'Mostrar Todo') {
+            // Por cada elemento que tiene definida una categoría
+            $('[data-cat]').each(function (index, element) {
+                // Si la categoría no coincide con el filtro seleccionado
+                if (categoria != element.dataset.cat) {
+                    // Ocultar elemento
+                    element.style.display = 'none';
+                }
+            });
+        }
     });
 
     // Al hacer click sobre alguno de los elementos de la paginación
