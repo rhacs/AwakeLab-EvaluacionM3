@@ -2,7 +2,7 @@
 
 # AwakeLab-EvaluacionM3
 
-Evaluación final Módulo 3: Fundamentos de Desarrollo Web
+Este repositorio contiene el desarrollo de la última evaluación del Módulo 3: Fundamentos de Desarrollo Web del curso FullStack Java de AwakeLab
 
 ## Dependencias
 
