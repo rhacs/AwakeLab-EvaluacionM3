@@ -13,6 +13,9 @@
         5.2. Filas
         5.3. Columnas
         5.4. Alineaciones de texto
+        5.5. Márgenes
+        5.6. Anchos
+        5.7. Otros
     6. Elementos especiales
 
 
@@ -37,6 +40,7 @@
     --color-gris: #888888;
     --color-gris-claro: #ced4da;
     --color-gris-oscuro: #312e32;
+    --color-gris-dos: #ffd9d9;
     --color-negro: #212529;
     --color-rojo: #d35c53;
     --color-rojo-claro: #f5dedb;
@@ -184,6 +188,43 @@ main {
     flex: 1;
 }
 
+button {
+    background-color: var(--color-rojo);
+    border: 1px solid var(--color-rojo-oscuro);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-blanco);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    margin-top: var(--valor-espaciado);
+    padding: var(--valor-espaciado-mitad) var(--valor-espaciado);
+    text-align: center;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: var(--color-rojo-claro);
+    border-color: var(--color-rojo-oscuro);
+    color: var(--color-rojo-oscuro);
+}
+
+input,
+select,
+textarea {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    border-radius: 0.25rem;
+    color: var(--color-gris-oscuro);
+    display: block;
+    font-family: inherit;
+    padding: var(--valor-espaciado-mitad) var(--valor-espaciado-trescuartos);
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
 /*
     4.3. Pie de Página
     ============================================================================================
@@ -315,7 +356,25 @@ footer ul li + li {
 }
 
 /*
-    5.5. Otros
+    5.5. Márgenes
+    ============================================================================================
+*/
+
+.mt-2 {
+    margin-top: var(--valor-espaciado-doble);
+}
+
+/*
+    5.6. Anchos
+    ============================================================================================
+*/
+
+.w-100 {
+    width: 100%;
+}
+
+/*
+    5.7. Otros
     ============================================================================================
 */
 
@@ -349,6 +408,7 @@ footer ul li + li {
 
 .formulario h1 {
     font-size: 1.25rem;
+    margin-bottom: var(--valor-espaciado-doble);
 }
 
 .formulario span {
@@ -366,37 +426,8 @@ footer ul li + li {
     display: block;
 }
 
-.formulario fieldset input {
-    background-color: var(--color-blanco);
-    border: 1px solid var(--color-gris-claro);
-    border-radius: 0.25rem;
-    color: var(--color-gris-oscuro);
-    display: block;
-    font-family: inherit;
-    padding: var(--valor-espaciado-mitad) var(--valor-espaciado-trescuartos);
-    width: 100%;
-}
-
 .formulario fieldset input + input {
     margin-top: 1rem;
-}
-
-.formulario fieldset button {
-    background-color: var(--color-azul);
-    border: 1px solid var(--color-azul);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-blanco);
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    padding: var(--valor-espaciado-cuarto) var(--valor-espaciado);
-    text-align: center;
-    vertical-align: middle;
-}
-
-.formulario fieldset button:hover {
-    background-color: var(--color-azul-claro);
-    border-color: var(--color-azul-oscuro);
 }
 
 .formulario p {
@@ -408,8 +439,36 @@ footer ul li + li {
     text-decoration: none;
 }
 
+.generico {
+    padding: var(--valor-espaciado);
+}
+
+.generico h2 {
+    margin-bottom: var(--valor-espaciado);
+}
+
+.generico ul {
+    list-style: none;
+}
+
+.generico ul li {
+    margin-left: var(--valor-espaciado);
+}
+
+.generico fieldset {
+    border: none;
+}
+
+.generico fieldset + fieldset {
+    margin-top: var(--valor-espaciado);
+}
+
+.generico label {
+    display: block;
+}
+
 .tarjeta {
-    padding: var(--valor-espaciado-mitad);
+    margin-bottom: var(--valor-espaciado);
     width: 100%;
 }
 
@@ -418,6 +477,27 @@ footer ul li + li {
 }
 
 .paginacion {
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
     margin-top: var(--valor-espaciado-doble);
     padding: var(--valor-espaciado);
     text-align: center;
@@ -468,7 +548,47 @@ footer ul li + li {
     color: var(--color-rojo);
 }
 
-#login:hover, #logout:hover {
+#login:hover,
+#logout:hover {
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
     background-color: var(--color-rojo);
     border-radius: var(--valor-espaciado-cuarto);
     color: var(--color-gris-oscuro);

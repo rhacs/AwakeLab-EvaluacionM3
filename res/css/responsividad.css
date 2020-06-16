@@ -45,6 +45,11 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 /*
