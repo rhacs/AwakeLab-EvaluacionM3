@@ -1,0 +1,430 @@
+/*
+    Tabla de Contenidos
+    ============================================================================================
+    1. Imports
+    2. Variables
+    3. General
+    4. Etiquetas
+        4.1. Cabecera
+        4.2. Contenido Principal
+        4.3. Pie de Página
+    5. Clases
+        5.1. Contenedores
+        5.2. Filas
+        5.3. Columnas
+        5.4. Alineaciones de texto
+    6. Elementos especiales
+
+
+    1. Imports
+    ============================================================================================
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic");
+
+/*
+    2. Variables
+    ============================================================================================
+*/
+
+:root {
+    /* Colores */
+    --color-azul: #0062cc;
+    --color-azul-claro: #007bff;
+    --color-azul-oscuro: #004ba0;
+    --color-blanco: #ffffff;
+    --color-gris: #888888;
+    --color-gris-claro: #ced4da;
+    --color-gris-oscuro: #312e32;
+    --color-negro: #212529;
+    --color-rojo: #d35c53;
+    --color-rojo-claro: #f5dedb;
+    --color-rojo-oscuro: #bb665e;
+
+    /* Valores Fijos */
+    --valor-espaciado: 1rem;
+    --valor-espaciado-cuarto: 0.25rem;
+    --valor-espaciado-doble: 2rem;
+    --valor-espaciado-mitad: 0.5rem;
+    --valor-espaciado-negativo: -1rem;
+    --valor-espaciado-trescuartos: 0.75rem;
+}
+
+/*
+    3. General
+    ============================================================================================
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    4. Etiquetas
+    ============================================================================================
+*/
+
+body {
+    color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    text-align: left;
+}
+
+/*
+    4.1. Cabecera
+    ============================================================================================
+*/
+
+header {
+    align-items: center;
+    background-color: var(--color-gris-oscuro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: var(--valor-espaciado-mitad) var(--valor-espaciado);
+}
+
+header .container {
+    align-items: center;
+    border-bottom: 1px solid var(--color-gris);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    padding-top: 0.4rem;
+}
+
+header .brand {
+    color: var(--color-gris-claro);
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-right: var(--valor-espaciado);
+    padding-bottom: var(--valor-espaciado-mitad);
+    padding-top: var(--valor-espaciado-mitad);
+    text-decoration: none;
+}
+
+header .brand svg {
+    color: var(--color-rojo);
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    visibility: visible;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: 0;
+    padding-left: 0;
+    visibility: visible;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--color-gris);
+    display: block;
+    padding: var(--valor-espaciado-mitad);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: var(--color-gris-claro);
+}
+
+header nav ul li .active {
+    color: var(--color-gris-claro) !important;
+}
+
+header #menu {
+    background-color: transparent;
+    border: none;
+    color: var(--color-gris-claro);
+    cursor: pointer;
+    display: none;
+    font-size: 1.125rem;
+    line-height: 1;
+    margin-left: auto;
+    padding: var(--valor-espaciado-cuarto) var(--valor-espaciado-trescuartos);
+}
+
+/*
+    4.2. Contenido principal
+    ============================================================================================
+*/
+
+main {
+    flex: 1;
+}
+
+/*
+    4.3. Pie de Página
+    ============================================================================================
+*/
+
+footer {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+footer a {
+    color: inherit;
+    padding: var(--valor-espaciado-cuarto);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-blanco);
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    list-style: none;
+}
+
+footer ul li + li {
+    padding-left: var(--valor-espaciado);
+}
+
+/*
+    5. Clases
+    ============================================================================================
+
+
+    5.1. Contenedores
+    ============================================================================================
+*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    padding-left: var(--valor-espaciado);
+    padding-right: var(--valor-espaciado);
+    width: 100%;
+}
+
+/*
+    5.2. Filas
+    ============================================================================================
+*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: var(--valor-espaciado-negativo);
+    margin-left: var(--valor-espaciado-negativo);
+}
+
+/*
+    5.3. Columnas
+    ============================================================================================
+*/
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+[class^="col-"] {
+    padding-left: var(--valor-espaciado);
+    padding-right: var(--valor-espaciado);
+    width: 100%;
+}
+
+/*
+    5.4. Alineaciones de texto
+    ============================================================================================
+*/
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*
+    5.5. Otros
+    ============================================================================================
+*/
+
+.blanco,
+.gris,
+.rojo {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.blanco {
+    background-color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
+}
+
+.rojo {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+}
+
+.gris {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+}
+
+.formulario {
+    display: none;
+    width: 480px;
+}
+
+.formulario h1 {
+    font-size: 1.25rem;
+}
+
+.formulario span {
+    background-color: var(--color-rojo-claro);
+    border: 1px solid var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-rojo-oscuro);
+    display: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+    display: block;
+}
+
+.formulario fieldset input {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    border-radius: 0.25rem;
+    color: var(--color-gris-oscuro);
+    display: block;
+    font-family: inherit;
+    padding: var(--valor-espaciado-mitad) var(--valor-espaciado-trescuartos);
+    width: 100%;
+}
+
+.formulario fieldset input + input {
+    margin-top: 1rem;
+}
+
+.formulario fieldset button {
+    background-color: var(--color-azul);
+    border: 1px solid var(--color-azul);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-blanco);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    padding: var(--valor-espaciado-cuarto) var(--valor-espaciado);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.formulario fieldset button:hover {
+    background-color: var(--color-azul-claro);
+    border-color: var(--color-azul-oscuro);
+}
+
+.formulario p {
+    text-align: center;
+}
+
+.formulario a {
+    color: var(--color-azul-claro);
+    text-decoration: none;
+}
+
+/*
+    6. Elementos especiales
+    ============================================================================================
+*/
+
+#volver {
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-size: 3rem;
+    margin-right: var(--valor-espaciado-doble);
+    margin-bottom: var(--valor-espaciado-doble);
+    position: fixed;
+    right: 0;
+}
+
+#login,
+#logout {
+    color: var(--color-rojo);
+}

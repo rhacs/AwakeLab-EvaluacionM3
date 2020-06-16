@@ -1,0 +1,116 @@
+/*
+    Tabla de Contenidos
+    ============================================================================================
+    1. Dispositivos con pantalla Grande
+        1.1. Clases
+    2. Dispositivos con pantalla Mediana
+        2.1. Clases
+    3. Dispositivos con pantalla Pequeña
+        3.1. Etiquetas
+        3.2. Clases
+    4. Dispositivos con pantalla Muy Pequeña
+        4.1. Clases
+
+
+    1. Dispositivos con pantalla Grande
+    ============================================================================================
+*/
+@media only screen and (max-width: 1199px) {
+    /*
+        1.1. Clases
+        ========================================================================================
+    */
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+/*
+    2. Dispositivos con pantalla Mediana
+    ============================================================================================
+*/
+
+@media only screen and (max-width: 991px) {
+    /*
+        2.1. Clases
+        ========================================================================================
+    */
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+/*
+    3. Dispositivos con pantalla Pequeña
+    ============================================================================================
+*/
+
+@media only screen and (max-width: 767px) {
+    /*
+        3.1. Etiquetas
+        ========================================================================================
+    */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        display: none;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header #menu {
+        display: block;
+    }
+
+    footer p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /*
+        3.2. Clases
+        ========================================================================================
+    */
+
+    .container {
+        max-width: 540px;
+    }
+
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .social {
+        text-align: center;
+    }
+}
+
+/*
+    4. Dispositivos con pantalla Muy Pequeña
+    ============================================================================================
+*/
+
+@media only screen and (max-width: 575px) {
+    /*
+        4.1. Clases
+        ========================================================================================
+    */
+
+    .container {
+        max-width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
