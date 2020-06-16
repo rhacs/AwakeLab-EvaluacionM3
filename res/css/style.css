@@ -122,6 +122,7 @@ header .brand {
 
 header .brand svg {
     color: var(--color-rojo);
+    margin-right: var(--valor-espaciado-cuarto);
 }
 
 header nav {
@@ -190,7 +191,7 @@ main {
 
 footer {
     background-color: var(--color-gris-oscuro);
-    color: var(--color-gris-claro);
+    color: var(--color-gris);
     padding-top: 3rem;
     padding-bottom: 4rem;
 }
@@ -407,6 +408,43 @@ footer ul li + li {
     text-decoration: none;
 }
 
+.tarjeta {
+    padding: var(--valor-espaciado-mitad);
+    width: 100%;
+}
+
+.tarjeta img {
+    max-width: 100%;
+}
+
+.paginacion {
+    margin-top: var(--valor-espaciado-doble);
+    padding: var(--valor-espaciado);
+    text-align: center;
+}
+
+.paginacion ul {
+    display: block;
+    list-style: none;
+}
+
+.paginacion ul li {
+    color: var(--color-gris-oscuro);
+    display: inline;
+}
+
+.paginacion ul li:hover {
+    color: var(--color-gris);
+}
+
+.paginacion ul li a {
+    background-color: var(--color-gris-claro);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: inherit;
+    padding: var(--valor-espaciado-trescuartos) var(--valor-espaciado);
+    text-decoration: none;
+}
+
 /*
     6. Elementos especiales
     ============================================================================================
@@ -414,6 +452,7 @@ footer ul li + li {
 
 #volver {
     bottom: 0;
+    color: var(--color-rojo);
     cursor: pointer;
     display: none;
     float: right;
@@ -427,4 +466,10 @@ footer ul li + li {
 #login,
 #logout {
     color: var(--color-rojo);
+}
+
+#login:hover, #logout:hover {
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-gris-oscuro);
 }

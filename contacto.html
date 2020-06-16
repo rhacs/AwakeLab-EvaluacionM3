@@ -41,13 +41,13 @@
                         <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="./restaurantes.html" class="active">Restaurantes</a>
+                        <a href="./restaurantes.html">Restaurantes</a>
                     </li>
                     <li>
                         <a href="./quienes-somos.html">Quiénes Somos</a>
                     </li>
                     <li>
-                        <a href="./contacto.html">Contáctanos</a>
+                        <a href="./contacto.html" class="active">Contáctanos</a>
                     </li>
                     <li>
                         <a href="javascript:;" id="login" data-fancybox data-src="#formLogin">
@@ -72,9 +72,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Restaurantes</h1>
+                        <h1>Contáctanos</h1>
                         <p>
-                            Encuentra tus locales favoritos o filtralos de acuerdo a tus necesidades.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, laudantium? Doloremque,
+                            tenetur maxime obcaecati deserunt dignissimos ut numquam, cum recusandae ipsa ex alias nam
+                            quaerat quas esse. Rem, eveniet totam?Et ad deserunt dolor velit ullam, itaque ea pariatur
+                            optio minima ducimus blanditiis voluptatibus obcaecati! Magni natus vel, deleniti laborum
+                            eum ex maiores voluptatem doloremque ipsa eius excepturi omnis cupiditate!
                         </p>
                     </div>
                 </div>
@@ -84,113 +88,53 @@
         <div class="blanco">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-6">
+                        <form action="" id="contacto" method="post">
+                            <fieldset>
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" name="nombre" id="nombre">
+                            </fieldset>
+                            <fieldset>
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" name="email" id="email">
+                            </fieldset>
+                            <fieldset>
+                                <label for="telefono">Teléfono de contacto</label>
+                                <input type="tel" name="telefono" id="telefono">
+                            </fieldset>
+                            <fieldset>
+                                <label for="asunto">Asunto</label>
+                                <select name="asunto" id="asunto">
+                                    <option value="Negocios">Negocios</option>
+                                    <option value="Reclamo">Reclamo</option>
+                                    <option value="Sugerencia">Sugerencia</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="col-6">
 
                     </div>
-                </div>
 
-                <!-- Galería de Restaurantes -->
-                <div class="row">
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="tarjeta">
-                            <h3>Nombre del Restaurante</h3>
-                            <img src="./res/img/restaurant-0001.png" alt="Nombre del Restaurante">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-12">
-                        <div class="paginacion">
+                        <div class="generico">
+                            <h2>Otros canales de comunicación</h2>
+                            <p>
+                                Si eres de la nueva generación que utiliza las redes sociales para comunicarte con
+                                quienes deseas, ¡no dejes de pasar por las nuestras! No te dejes engañar, estas son
+                                nuestras cuentas oficiales:
+                            </p>
                             <ul>
                                 <li>
-                                    <a href="javascript:;">&laquo;</a>
+                                    Facebook:
                                 </li>
                                 <li>
-                                    <a href="javascript:;" class="active">1</a>
+                                    Twitter:
                                 </li>
                                 <li>
-                                    <a href="javascript:;">2</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">3</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">4</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">5</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">6</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">&raquo;</a>
+                                    Instagram:
                                 </li>
                             </ul>
                         </div>
