@@ -2,10 +2,23 @@
 
 # AwakeLab-EvaluacionM3
 
-Este repositorio contiene el desarrollo de la última evaluación del Módulo 3: Fundamentos de Desarrollo Web del curso FullStack Java de AwakeLab
+Este repositorio contiene el desarrollo de la última evaluación del Módulo 3: Fundamentos de Desarrollo Web del curso FullStack Java de [AwakeLab](https://awakelab.cl)
 
 ## Dependencias
 
  * [jQuery v3.5.1](https://code.jquery.com)
  * [FancyBox v3.5.7](https://fancyapps.com)
  * [FontAwesome v5.12.0-2](https://fontawesome.com)
+
+## Descripción de los archivos
+Nombre del Archivo | Descripción
+------------------ | -----------
+res/css/libs/*.css | Hojas de estilo específicas de las librerías ocupadas en el proyecto
+res/css/*.css | Hojas de estilo
+res/img/* | Imágenes estáticas
+res/js/libs/*.js | Librerías utilizadas en el proyecto
+res/js/*.js | Scripts del proyecto
+.editorconfig | Configuración del editor del proyecto
+.gitignore | Contiene los archivos ignorados por el repositorio
+LICENSE | Licencia del proyecto
+README.md | Archivo de texto (formato MarkDown) con la descripción del proyecto
