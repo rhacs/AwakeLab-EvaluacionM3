@@ -122,13 +122,3 @@ window.onresize = function () {
         $('nav').css('display', 'none');
     }
 };
-
-/*
-    Fancybox config
-    ============================================================================================
-*/
-
-$('[data-fancybox]').fancybox({
-    // Cerrar popup previo, si existe
-    closeExisting: true
-});
