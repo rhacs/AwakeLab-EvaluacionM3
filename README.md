@@ -20,5 +20,6 @@ res/js/libs/*.js | Librerías utilizadas en el proyecto
 res/js/*.js | Scripts del proyecto
 .editorconfig | Configuración del editor del proyecto
 .gitignore | Contiene los archivos ignorados por el repositorio
+*.html | Contenido de las páginas
 LICENSE | Licencia del proyecto
 README.md | Archivo de texto (formato MarkDown) con la descripción del proyecto
