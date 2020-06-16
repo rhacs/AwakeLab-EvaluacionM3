@@ -45,6 +45,7 @@
     --color-rojo: #d35c53;
     --color-rojo-claro: #f5dedb;
     --color-rojo-oscuro: #bb665e;
+    --color-verde: #28a745;
 
     /* Valores Fijos */
     --valor-espaciado: 1rem;
@@ -517,7 +518,11 @@ footer ul li + li {
 }
 
 .filtro {
-    margin-bottom: var(--valor-espaciado-doble);
+    margin-bottom: 3rem;
+}
+
+.filtro h4 {
+    margin-bottom: 1rem;
 }
 
 .filtro ul {
@@ -528,11 +533,22 @@ footer ul li + li {
 }
 
 .filtro ul li {
-    background-color: var(--color-rojo);
+    border: 1px solid var(--color-verde);
     border-radius: var(--valor-espaciado-mitad);
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
+    cursor: pointer;
     font-size: .8rem;
     padding: var(--valor-espaciado-mitad) var(--valor-espaciado);
+}
+
+.filtro ul li:hover {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+}
+
+.filtro ul .selected {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
 }
 
 /*
