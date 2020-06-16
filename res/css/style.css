@@ -247,16 +247,6 @@ footer a:hover {
     color: var(--color-blanco);
 }
 
-footer p {
-    margin: 0;
-    padding: 0;
-}
-
-footer ul {
-    margin: 0;
-    padding: 0;
-}
-
 footer ul li {
     display: inline;
     list-style: none;
@@ -476,29 +466,24 @@ footer ul li + li {
     max-width: 100%;
 }
 
+.tarjeta a {
+    background-color: var(--color-rojo);
+    border: 1px solid var(--color-rojo-oscuro);
+    border-radius: var(--valor-espaciado-cuarto);
+    color: var(--color-blanco);
+    cursor: pointer;
+    padding: var(--valor-espaciado-mitad) var(--valor-espaciado);
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    background-color: var(--color-rojo-claro);
+    border-color: var(--color-rojo-oscuro);
+    color: var(--color-rojo-oscuro);
+}
+
 .paginacion {
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
-    padding: var(--valor-espaciado);
-    text-align: center;
-    margin-top: var(--valor-espaciado-doble);
+    margin-top: 4rem;
     padding: var(--valor-espaciado);
     text-align: center;
 }
@@ -523,6 +508,31 @@ footer ul li + li {
     color: inherit;
     padding: var(--valor-espaciado-trescuartos) var(--valor-espaciado);
     text-decoration: none;
+}
+
+.paginacion ul li .active {
+    background-color: var(--color-rojo);
+    border: 1px solid var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+}
+
+.filtro {
+    margin-bottom: var(--valor-espaciado-doble);
+}
+
+.filtro ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.filtro ul li {
+    background-color: var(--color-rojo);
+    border-radius: var(--valor-espaciado-mitad);
+    color: var(--color-blanco);
+    font-size: .8rem;
+    padding: var(--valor-espaciado-mitad) var(--valor-espaciado);
 }
 
 /*
@@ -550,45 +560,6 @@ footer ul li + li {
 
 #login:hover,
 #logout:hover {
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
-    background-color: var(--color-rojo);
-    border-radius: var(--valor-espaciado-cuarto);
-    color: var(--color-gris-oscuro);
     background-color: var(--color-rojo);
     border-radius: var(--valor-espaciado-cuarto);
     color: var(--color-gris-oscuro);
