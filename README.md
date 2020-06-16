@@ -9,6 +9,7 @@ Este repositorio contiene el desarrollo de la última evaluación del Módulo 3:
  * [jQuery v3.5.1](https://code.jquery.com)
  * [FancyBox v3.5.7](https://fancyapps.com)
  * [FontAwesome v5.12.0-2](https://fontawesome.com)
+ * [LoadingOverlay v2.1.7](https://gasparesganga.com/labs/jquery-loading-overlay/)
 
 ## Descripción de los archivos
 Nombre del Archivo | Descripción
