@@ -59,4 +59,28 @@ $(function () {
             }
         });
     });
+
+    // Al enviar el formulario de reserva
+    $('#formReserva').on('submit', function(event) {
+        event.preventDefault();
+
+        // Recuperar los datos ingresados por el usuario
+        let nombre = $('#reservaNombre').val();
+        let correo = $('#reservaEmail').val();
+        let cantidad = $('#reservaCantidad').val();
+        let comentarios = $('#reservaComentarios').val();
+
+        // Preparar texto
+        let texto = `${nombre} (${correo}): Acompañantes ${cantidad}\n${comentarios}`;
+
+        // Vaciar el contenedor de códigos
+        $('#codigoqr').empty();
+
+        // Generar código QR
+        $('#codigoqr').qrcode({
+            height: 256,
+            text: texto,
+            width: 256
+        });
+    });
 });

@@ -641,3 +641,14 @@ footer ul li + li {
     border-radius: var(--valor-espaciado-cuarto);
     color: var(--color-gris-oscuro);
 }
+
+#reserva {
+    display: none;
+}
+
+#codigoqr {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

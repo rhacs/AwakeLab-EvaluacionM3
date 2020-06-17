@@ -73,6 +73,7 @@
                 <div class="row">
                     <div class="col-4 col-12-md">
                         <img src="../res/img/logo-restaurante.png" alt="logo" class="w-100">
+                        <button data-fancybox data-src="#reserva" class="w-100">Efectuar Reserva</button>
                     </div>
 
                     <div class="col-4">
@@ -516,6 +517,47 @@
         </div>
     </footer>
 
+    <!-- Formulario de Reserva -->
+    <div id="reserva" class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="generico">
+                    <h2>Formulario de Reserva</h2>
+
+                    <form id="formReserva" action="" method="post">
+                        <fieldset>
+                            <label for="reservaNombre">Nombre Completo</label>
+                            <input type="text" name="reservaNombre" id="reservaNombre" autocomplete="name" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="reservaEmail">Correo Electrónico</label>
+                            <input type="email" name="reservaEmail" id="reservaEmail" autocomplete="email" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="reservaCantidad">Cantidad de Personas</label>
+                            <input type="number" name="reservaCantidad" id="reservaCantidad" value="1" min="1" max="10"
+                                pattern="[0-9]+" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="reservaComentarios">Comentarios</label>
+                            <textarea name="reservaComentarios" id="reservaComentarios" rows="4"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button type="submit" class="w-100">Reservar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="generico">
+                    <h2>Su código de reserva</h2>
+                    <div id="codigoqr"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Volver al inicio -->
     <div id="volver">
         <i class="fas fa-arrow-circle-up"></i>
@@ -546,6 +588,8 @@
     <script src="../res/js/libs/fontawesome-5.12.0.all.min.js"></script>
     <!-- LoadingOverlay -->
     <script src="../res/js/libs/jquery.loadingoverlay-2.1.7.min.js"></script>
+    <!-- QRCode -->
+    <script src="../res/js/libs/jquery.qrcode-1.0.min.js"></script>
 
     <!-- JavaScripts: Sitio -->
     <script src="../res/js/comun.js"></script>
