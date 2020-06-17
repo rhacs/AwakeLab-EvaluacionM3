@@ -1,10 +1,5 @@
 // Ejecutar el script una vez cargada la página
 $(function () {
-    // Mostrar "dialogo" de carga
-    function mostrarCargando() {
-        // Mostrar el dialogo 'Cargando'
-
-    };
 
     // Al enviar el formulario de comentarios
     $('#formComentario').on('submit', function (event) {
