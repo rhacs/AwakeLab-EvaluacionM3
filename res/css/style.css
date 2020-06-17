@@ -381,6 +381,10 @@ footer ul li + li {
     margin-top: var(--valor-espaciado-doble);
 }
 
+.mb-2 {
+    margin-bottom: var(--valor-espaciado-doble);
+}
+
 /*
     5.6. Anchos
     ============================================================================================
