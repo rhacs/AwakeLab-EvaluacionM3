@@ -101,6 +101,14 @@
         max-width: 100%;
     }
 
+    .filtro ul {
+        flex-direction: column;
+    }
+
+    .filtro ul li + li {
+        margin-top: var(--valor-espaciado-mitad);
+    }
+
     .social {
         text-align: center;
     }
