@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Juego de Caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Controlar tamaño y escala iniciales de la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>TakaMat - Características</title>
+
+    <!-- Hojas de Estilo: Librerías -->
+    <link rel="stylesheet" href="../res/css/libs/jquery.fancybox.min.css" />
+
+    <!-- Hojas de Estilo: Sitio -->
+    <link rel="stylesheet" href="../res/css/style.css">
+    <link rel="stylesheet" href="../res/css/responsividad.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="../index.html" class="brand">
+                <i class="fas fa-concierge-bell"></i>
+                TakaMat
+            </a>
+
+            <!-- Botón desplegar menú, visible en dispositivos de pantalla mediana hacia abajo -->
+            <button id="menu">
+                <i class="far fa-caret-square-down"></i>
+            </button>
+
+            <!-- Navegación -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../restaurantes.html">Restaurantes</a>
+                    </li>
+                    <li>
+                        <a href="../quienes-somos.html">Quiénes Somos</a>
+                    </li>
+                    <li>
+                        <a href="../contacto.html">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="login" data-fancybox data-src="#formLogin">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Iniciar Sesión
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="gris">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Sistema de Pago</h1>
+                        <p>
+                            En nuestro proyecto emplearemos un sistema de pago sin contacto el cual nos permita pagar
+                            una compra o un servicio mediante tecnologías de Identificación por radiofrecuencias
+                            incorporadas en medios tales como tarjetas de credito o debito, llaveros, tarjetas
+                            inteligentes, teléfonos móviles (pago móvil) u otros dispositivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blanco">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <p>
+                            El chip y la antena incorporados permiten a los consumidores cancelar una transacción
+                            acercando el dispositivo a un lector del terminal o punto de venta, de tal manera que no sea
+                            necesario leer el dispositivo de forma física a través de una ranura de lectura o
+                            deslizamiento en un lector de banda magnética.
+                        </p>
+                        <p>
+                            Dentro de las tecnologías de los pagos sin contacto, la EVM (Europay Mastercard Visa)
+                            permite el uso de tecnologías como la identificación por radiofrecuencias (RFID)
+                            habitualmente anunciado como Contactless en tarjetas y terminales de puntos de ventas y la
+                            tecnología NFC es la usada para este tipo de transacciones de pago.
+                        </p>
+                    </div>
+                    <div class="col-4 mt-2">
+                        <img src="../res/img/rfid.png" alt="rfid" class="w-100">
+                    </div>
+
+                    <div class="col-4 mt-2">
+                        <img src="../res/img/rfid2.png" alt="rfid" class="w-100">
+                    </div>
+
+                    <div class="col-8 mt-2">
+                        <p>
+                            NFC (Near field communication o Comunicación de Campo Cercano) es una tecnología de
+                            comunicación inalámbrica, de corto alcance y alta frecuencia que permite el intercambio de
+                            datos entre dispositivos electrónicos de manera inalámbrica y sin contacto físico.
+                        </p>
+                        <p>
+                            Este intercambio de de datos no es nuevo, empezó a utilizarse en el año 2003, aunque entre
+                            el año pasado y el actual muchas marcas, instituciones bancarias y organizaciones la han
+                            comenzado a utilizar en su modelo de negocio, lo que se ha convertido en importantes avances
+                            en los métodos de pago Contactless y móvil basados en esta tecnología.
+                        </p>
+                        <p>
+                            Esta forma de comunicación entre dispositivos electrónicos hereda todas sus características
+                            de distancia y velocidad de transmisión de las etiquetas RFID, o dicho de otro modo, las
+                            alarmas en las tiendas de ropa que detectan los arcos de seguridad.
+                        </p>
+                        <p>
+                            La primera marca en ver su potencial fue Nokia que junto con Philips y Sony crearon en el
+                            año 2004 el NFC Forum una asociación sin Fines de Lucro en donde se comparten y exponen
+                            experiencias, aplicaciones y soluciones para el entorno NFC. Hoy en día los tres miembros
+                            han pasado a ser más de 170 marcas y empresas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p>
+                            Los estándares de uso de NFC cubren protocolos de comunicación y formatos de datos y están
+                            basados en el ISO 14443 (RFID, Radio-Frecuency Identification).
+                        </p>
+                        <p>
+                            RFID o identificación por radio frecuencia es un sistema de almacenamiento y recuperación de
+                            datos remotos que usa dispositivos denominados etiquetas, tarjetas o transpondedores RFID,
+                            el propósito fundamental de esta tecnología es transmitir la identidad de un objeto, similar
+                            a un número de serie único mediante ondas de radio, las cuales estas se agrupan dentro de
+                            las denominadas Auto ID (Automatic identification o de Identificación Automática).
+                        </p>
+                        <p>
+                            La tecnología NFC tiene una serie de ventajas ante el pago tradicional con tarjetas o
+                            billetes; la seguridad que garantiza por la necesaria proximidad entre los dispositivos (a
+                            más de 10 o 15 centímetros deja de funcionar); y con su elevada velocidad de transmisión
+                            para enviar y recibir los datos proporciona un método casi instantáneo para efectuar una
+                            transacción de pago efectiva.
+                        </p>
+                        <p>
+                            Sin embargo en el año 2006 los fabricantes de dispositivos móviles más importantes del mundo
+                            vieron la posibilidad de incorporar NFC a sus terminales móviles con lo cual este método de
+                            pago a través de móviles se expandió y la seguridad de este medio está protegida a través de
+                            una encriptación de datos utilizando un token que llega al lector NFC, que desencripta e
+                            interpreta ese token, además la mayoría de aplicaciones piden un código Pin para confirmar
+                            el pago y la factura o boleta de pago es instantánea.
+                        </p>
+                    </div>
+
+                    <div class="col-4 mt-2">
+                        <img src="../res/img/rfid3.png" alt="rfid" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p>Copyleft &#127279; 2020. Algunos derechos reservados.</p>
+                </div>
+                <div class="col-6 text-right">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/rhacs/AwakeLab-EvaluacionM3" target="_blank" title="GitHub"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank" title="Facebook" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank" title="Instagram" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Volver al inicio -->
+    <div id="volver">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
+
+    <!-- Login -->
+    <form id="formLogin" class="formulario" action="" method="post">
+        <h1>Inicio de Sesión</h1>
+
+        <span>Intenta con admin:admin</span>
+
+        <fieldset>
+            <input type="text" id="usuario" placeholder="Nombre de Usuario" autocomplete="username" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+        </fieldset>
+
+        <fieldset class="text-right">
+            <button type="submit">Acceder</button>
+        </fieldset>
+    </form>
+
+    <!-- JavaScripts: Librerías -->
+    <!-- jQuery v3.5.1 -->
+    <script src="../res/js/libs/jquery-3.5.1.min.js"></script>
+    <!-- Fancybox v3.5.7 -->
+    <script src="../res/js/libs/jquery.fancybox-3.5.7.min.js"></script>
+    <!-- FontAwesome - all v5.12.0 -->
+    <script src="../res/js/libs/fontawesome-5.12.0.all.min.js"></script>
+
+    <!-- JavaScripts: Sitio -->
+    <script src="../res/js/comun.js"></script>
+</body>
+
+</html>

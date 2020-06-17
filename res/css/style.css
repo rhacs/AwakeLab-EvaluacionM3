@@ -234,6 +234,16 @@ p + p {
     margin-top: var(--valor-espaciado);
 }
 
+p a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: var(--color-rojo);
+}
+
 /*
     4.3. Pie de Página
     ============================================================================================
