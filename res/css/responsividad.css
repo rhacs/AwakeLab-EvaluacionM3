@@ -101,6 +101,10 @@
         max-width: 100%;
     }
 
+    .col-4 + .col-4 {
+        margin-top: var(--valor-espaciado);
+    }
+
     .filtro ul {
         flex-direction: column;
     }
