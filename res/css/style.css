@@ -316,8 +316,8 @@ footer ul li + li {
 */
 
 .col-2 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
 .col-4 {

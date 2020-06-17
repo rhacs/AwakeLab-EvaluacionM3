@@ -48,6 +48,7 @@
 
     .col-6 {
         flex: 0 0 100%;
+        margin-top: var(--valor-espaciado);
         max-width: 100%;
     }
 
@@ -80,6 +81,7 @@
 
     header nav ul {
         flex-direction: column;
+        margin-left: 0;
     }
 
     header #menu {
@@ -98,6 +100,11 @@
 
     .container {
         max-width: 540px;
+    }
+
+    .col-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .col-4,
@@ -135,6 +142,12 @@
     */
 
     .container {
+        max-width: 100%;
+    }
+
+    .col-2 {
+        flex: 0 0 100%;
+        margin-top: var(--valor-espaciado);
         max-width: 100%;
     }
 
