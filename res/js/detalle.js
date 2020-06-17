@@ -3,15 +3,7 @@ $(function () {
     // Mostrar "dialogo" de carga
     function mostrarCargando() {
         // Mostrar el dialogo 'Cargando'
-        $.LoadingOverlay('show', {
-            image: '',
-            text: 'Cargando ...'
-        });
 
-        // Cerrar el dialogo luego de 1500ms
-        setTimeout(function () {
-            $.LoadingOverlay('hide');
-        }, 800);
     };
 
     // Al enviar el formulario de comentarios
@@ -38,37 +30,35 @@ $(function () {
     });
 
     // Al seleccionar una categoría de comestibles
-    $('#comidas').on('change', function (event) {
+    $('select').on('change', function (event) {
         // Mostrar "dialogo" de carga
-        mostrarCargando();
+        $.LoadingOverlay('show', {
+            image: '',
+            text: 'Cargando ...'
+        });
+
+        // Cerrar el dialogo luego de 800ms
+        setTimeout(function () {
+            $.LoadingOverlay('hide');
+        }, 800);
+
+        // Obtener origen
+        let origen = this.id;
+
+        // De acuerdo al origen, seleccionar el contenedor
+        let contenedor = $('#contenedorComidas');
+        if (origen === 'bebestibles') {
+            contenedor = $('#contenedorBebestibles');
+        }
 
         // Recuperar elemento seleccionado
         let seleccion = this.value;
 
         // Esconder todos los elementos
-        $('#contenedorComidas').children('div').hide();
+        contenedor.children('div').hide();
 
         // Mostrar sólo el elemento que corresponde a la selección
-        $('#contenedorComidas').children('div').each(function (index, element) {
-            if (element.id === seleccion) {
-                element.style.display = 'block';
-            }
-        });
-    });
-
-    // Al seleccionar una categoría de bebestibles
-    $('#bebestibles').on('change', function (event) {
-        // Mostrar "dialogo" de carga
-        mostrarCargando();
-
-        // Recuperar el valor del elemento seleccionado
-        let seleccion = this.value;
-
-        // Esconder todos los elementos dentro del contenedor
-        $('#contenedorBebestibles').children('div').hide();
-
-        // Mostrar sólo el elemento que corresponde a la selección
-        $('#contenedorBebestibles').children('div').each(function (index, element) {
+        contenedor.children('div').each(function (index, element) {
             if (element.id === seleccion) {
                 element.style.display = 'block';
             }
