@@ -484,6 +484,24 @@ footer ul li + li {
     display: block;
 }
 
+.generico select {
+    margin-bottom: var(--valor-espaciado);
+}
+
+.generico .detalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.generico div span {
+    color: var(--color-rojo-claro);
+}
+
+.generico .item + .item {
+    margin-top: var(--valor-espaciado-mitad);
+}
+
 .tarjeta {
     margin-bottom: var(--valor-espaciado);
     width: 100%;
@@ -563,7 +581,7 @@ footer ul li + li {
     border-radius: var(--valor-espaciado-mitad);
     color: var(--color-gris-oscuro);
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: var(--valor-espaciado-mitad) var(--valor-espaciado);
 }
 
@@ -575,6 +593,23 @@ footer ul li + li {
 .filtro ul .selected {
     background-color: var(--color-verde);
     color: var(--color-blanco);
+}
+
+.card {
+    background-color: var(--color-blanco);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: var(--valor-espaciado-cuarto);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cuerpo {
+    flex: 1 1 auto;
+    padding: var(--valor-espaciado);
+}
+
+.card + .card {
+    margin-top: var(--valor-espaciado);
 }
 
 /*
