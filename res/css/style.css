@@ -226,6 +226,14 @@ textarea {
     resize: vertical;
 }
 
+h1 + p {
+    margin-top: var(--valor-espaciado-doble);
+}
+
+p + p {
+    margin-top: var(--valor-espaciado);
+}
+
 /*
     4.3. Pie de Página
     ============================================================================================
@@ -286,6 +294,10 @@ footer ul li + li {
     flex-direction: row;
     margin-right: var(--valor-espaciado-negativo);
     margin-left: var(--valor-espaciado-negativo);
+}
+
+.row + .row {
+    margin-top: var(--valor-espaciado-doble);
 }
 
 /*
